@@ -3,10 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Квестикс</title>
 </head>
 <body>
+
+  <div class="wrapper d-flex flex-column justify-content-between">
+    <header class="header">
+      <div class="container custom-container">
+        <div class="header__content d-flex justify-content-between align-items-center">
+          <button class="mob-menu d-block d-sm-none" type="button" aria-label="Кнопка управления мобильным меню."></button>
+          <a href="/" class="logo header__logo">
+            <img src="./img/logo.svg" alt="Логотип Квестикс." width="137" height="24">
+          </a>
+          <nav class="menu d-flex align-items-center">
+            <a href="#" class="menu__link d-flex flex-column align-items-center">
+              <svg class="icon phone-icon">
+                <use id="phoneIcon" xlink:href="./img/icons/sprite.svg#phone"></use>
+              </svg>
+              Контакты
+            </a>
+            <a href="#" class="menu__link d-flex flex-column align-items-center">
+              <svg class="icon book-icon">
+                <use id="bookIcon" xlink:href="./img/icons/sprite.svg#book"></use>
+              </svg>
+              Блог
+            </a>
+            <a href="#" class="menu__link d-flex flex-column align-items-center">
+              <svg class="icon profile-icon">
+                <use id="profileIcon" xlink:href="./img/icons/sprite.svg#profile"></use>
+              </svg>
+              Заказы
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main flex-grow-1">
+      <ol class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a href="/" class="breadcrumbs__text">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__text">Каталог</span>
+        </li>
+      </ol>
+    </main>
+    <footer class="footer">
+
+    </footer>
+  </div>
   
   <script src="js/libs/swiper-bundle.js"></script>
   <script src="js/main.js"></script>

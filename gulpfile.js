@@ -13,31 +13,31 @@ const svgSprite = require('gulp-svg-sprite');
 const paths = {
   html: {
     src: 'src/*.html',
-    dest: 'dist/'
+    dest: 'dist/',
   },
   styles: {
     src: 'src/scss/**/style.scss',
-    dest: 'dist/css/'
+    dest: 'dist/css/',
   },
   scripts: {
     src: 'src/js/**/*.js',
-    dest: 'dist/js/'
+    dest: 'dist/js/',
   },
   images: {
     src: 'src/img/*',
-    dest: 'dist/img'
+    dest: 'dist/img',
   },
   fonts: {
     src: 'src/fonts/*',
-    dest: 'dist/fonts'
+    dest: 'dist/fonts',
   },
   ico: {
     src: '*.ico',
-    dest: 'dist/'
+    dest: 'dist/',
   },
   libs: {
     src: 'src/js/**/*.js',
-    dest: 'dist/js/libs/'
+    dest: 'dist/js/libs/',
   },
 }
 
@@ -47,7 +47,7 @@ function ico() {
 }
 
 function libs() {
-  return gulp.src("./node_modules/swiper/swiper-bundle.js")
+  return gulp.src(["./node_modules/swiper/swiper-bundle.js", "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"])
     .pipe(gulp.dest(paths.libs.dest))
     .pipe(concat('libs.js'))
     .pipe(browsersync.stream());
@@ -64,7 +64,7 @@ function fonts() {
 }
 
 function styles() {
-  return gulp.src(paths.styles.src)
+  return gulp.src([paths.styles.src, "./node_modules/bootstrap/dist/css/bootstrap.min.css",])
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({

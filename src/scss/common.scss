@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: $bgColor;
+  font-family: $fontFamily;
+}
+
+img {
+  display: block;
+}
+
+.custom-container {
+  max-width: 1140px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
