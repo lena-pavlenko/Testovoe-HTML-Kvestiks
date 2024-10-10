@@ -3,8 +3,9 @@ window.onload = function() {
 
   if (slider) {
     const swiper = new Swiper(slider, {
-      slidesPerView: 3,
-      spaceBetween: 24,
+      loop: true,
+      slidesPerView: 1.15,
+      spaceBetween: 10,
       pagination: {
         el: '.review-slider .swiper-pagination',
       },
@@ -14,7 +15,9 @@ window.onload = function() {
       },
       breakpoints: {
         576: {
+          loop: false,
           slidesPerView: 2,
+          spaceBetween: 24,
         },
         1199: {
           slidesPerView: 3,

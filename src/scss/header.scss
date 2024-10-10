@@ -1,6 +1,15 @@
 .header {
   background-color: #fff;
   padding: 8.5px 0;
+
+  @media(max-width: $smMedia) {
+    padding: 10px 0;
+  }
+
+  &__content {
+    margin-right: -3px;
+    margin-left: -3px;
+  }
 }
 
 .menu {
@@ -18,6 +27,16 @@
 
 .logo {
   display: block;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media(max-width: $smMedia) {
+    width: 104px;
+    height: 18px;
+  }
 }
 
 .menu-icon {
@@ -29,7 +48,7 @@
   outline: none;
   background: transparent;
   border: none;
-  padding: 0; 
+  padding: 6px 3px; 
 
   svg {
     width: 18px;

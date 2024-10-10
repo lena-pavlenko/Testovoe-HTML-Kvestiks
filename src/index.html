@@ -15,7 +15,7 @@
     <header class="header">
       <div class="container custom-container">
         <div class="header__content d-flex justify-content-between align-items-center">
-          <button class="mob-menu d-block d-sm-none" type="button"
+          <button class="mob-menu d-flex d-sm-none" type="button"
             aria-label="Кнопка управления мобильным меню.">
             <svg class="burger-icon">
               <use id=burgerIcon" xlink:href="./img/icons/sprite.svg#burger"></use>
@@ -70,10 +70,10 @@
               <section class="banner-section">
                 <div class="quest-banner">
                   <div class="quest-banner__tip">самый популярный</div>
-                  <h1 class="quest-banner__title">Стрелы Амура, 18+</h1>
+                  <h1 class="quest-banner__title text-center text-sm-start">Стрелы Амура, 18+</h1>
                   <div class="quest-banner__bottom">
 
-                    <ul class="quest-banner__tags d-flex align-items-sm-center flex-wrap">
+                    <ul class="quest-banner__tags d-flex align-items-center justify-content-center justify-content-sm-start flex-wrap">
                       <li class="tag">
                         <a href="#" class="tag__link">квест</a>
                       </li>
@@ -88,7 +88,7 @@
                       </li>
                     </ul>
 
-                    <p class="quest-banner__description m-0">
+                    <p class="quest-banner__description text-center text-sm-start m-0">
                       Романтический квест по поиску подарка для второй половинки: мужа, жены, парня или девушки.
                       Чтобы собрать 7 стрел бога любви Амура и разыскать подарок, игроку нужно выполнить задания древних
                       богов.
@@ -98,10 +98,14 @@
               </section>
 
               <section class="reviews">
-                <h2 class="reviews__title">
-                  Отзывы клиентов
-                  <sup class="reviews__title-count">182</sup>
-                </h2>
+
+                <div class="reviews__head">
+                  <h2 class="reviews__title">
+                    Отзывы клиентов
+                    <sup class="reviews__title-count d-none d-sm-block">182</sup>
+                  </h2>
+                  <div class="counter d-block d-sm-none"><span class="counter__current">1</span>/<span class="counter__length">182</span></div>
+                </div>
 
                 <div class="swiper review-slider">
                   <div class="swiper-wrapper">
@@ -301,8 +305,8 @@
 
                     </article>
                   </div>
-                  <div class="swiper-pagination d-block d-md-none"></div>
-                  <div class="swiper-scrollbar d-none d-md-block"></div>
+                  <div class="swiper-pagination d-flex align-items-center justify-content-center d-sm-none"></div>
+                  <div class="swiper-scrollbar d-none d-sm-block"></div>
                 </div>
 
                 <a href="#"
@@ -316,7 +320,7 @@
             <sidebar class="page-content__details col-xs-12 col-lg-4 col-xl-3">
 
               <div class="payment-card d-flex flex-column align-items-center gap-4">
-                <div class="payment-card__top">
+                <div class="payment-card__top d-none d-sm-block">
                   <span class="payment-card__basic-text mb-2 d-block text-center">Принимаем к оплате</span>
                   <div class="payment-card__logos d-flex flex-md-nowrap align-items-center">
                     <span class="payment-card__logo payment-card__logo_sber" aria-label="Сбер."></span>
@@ -326,7 +330,7 @@
                   </div>
                 </div>
 
-                <div class="payment-card__title text-center d-flex flex-column align-items-center">Я из другой страны —
+                <div class="payment-card__title text-center d-none d-sm-flex flex-column align-items-center">Я из другой страны —
                   <a href="#">как оплатить?</a>
                 </div>
 
