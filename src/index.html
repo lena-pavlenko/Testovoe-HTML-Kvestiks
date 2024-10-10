@@ -10,8 +10,8 @@
 </head>
 
 <body>
-
   <div class="wrapper d-flex flex-column justify-content-between">
+
     <header class="header">
       <div class="container custom-container">
         <div class="header__content d-flex justify-content-between align-items-center">
@@ -47,6 +47,7 @@
         </div>
       </div>
     </header>
+
     <main class="main flex-grow-1 pt-0 pt-sm-4">
 
       <div class="container custom-container">
@@ -102,9 +103,12 @@
                 <div class="reviews__head">
                   <h2 class="reviews__title">
                     Отзывы клиентов
-                    <sup class="reviews__title-count d-none d-sm-block">182</sup>
+                    <sup class="reviews__title-count d-none d-sm-inline"></sup>
                   </h2>
-                  <div class="counter d-block d-sm-none"><span class="counter__current">1</span>/<span class="counter__length">182</span></div>
+                  <div class="counter d-block d-sm-none" data-counter="reviewsCounter">
+                    <span class="counter__current">1</span> /
+                    <span class="counter__length">182</span>
+                  </div>
                 </div>
 
                 <div class="swiper review-slider">
@@ -304,6 +308,7 @@
                       </div>
 
                     </article>
+
                   </div>
                   <div class="swiper-pagination d-flex align-items-center justify-content-center d-sm-none"></div>
                   <div class="swiper-scrollbar d-none d-sm-block"></div>
@@ -317,9 +322,9 @@
 
             </div>
 
-            <sidebar class="page-content__details col-xs-12 col-lg-4 col-xl-3">
+            <div class="page-content__details col-xs-12 col-lg-4 col-xl-3">
 
-              <div class="payment-card d-flex flex-column align-items-center gap-4">
+              <sidebar class="payment-card d-flex flex-column align-items-center gap-4">
                 <div class="payment-card__top d-none d-sm-block">
                   <span class="payment-card__basic-text mb-2 d-block text-center">Принимаем к оплате</span>
                   <div class="payment-card__logos d-flex flex-md-nowrap align-items-center">
@@ -339,8 +344,8 @@
                   <span class="btn__text">Купить квест</span>
                   <span class="btn__text">500 ₽</span>
                 </a>
-              </div>
-            </sidebar>
+              </sidebar>
+            </div>
 
           </div>
         </div>
@@ -353,5 +358,4 @@
   <script src="js/libs/swiper-bundle.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>
