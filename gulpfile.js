@@ -47,7 +47,7 @@ function ico() {
 }
 
 function libs() {
-  return gulp.src(["./node_modules/swiper/swiper-bundle.js", "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"])
+  return gulp.src(["./node_modules/swiper/swiper-bundle.min.js",])
     .pipe(gulp.dest(paths.libs.dest))
     .pipe(concat('libs.js'))
     .pipe(browsersync.stream());
