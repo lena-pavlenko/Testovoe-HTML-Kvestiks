@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,55 +8,346 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Квестикс</title>
 </head>
+
 <body>
 
   <div class="wrapper d-flex flex-column justify-content-between">
     <header class="header">
       <div class="container custom-container">
         <div class="header__content d-flex justify-content-between align-items-center">
-          <button class="mob-menu d-block d-sm-none" type="button" aria-label="Кнопка управления мобильным меню."></button>
-          <a href="/" class="logo header__logo">
+          <button class="mob-menu d-block d-sm-none" type="button"
+            aria-label="Кнопка управления мобильным меню.">
+            <svg class="burger-icon">
+              <use id=burgerIcon" xlink:href="./img/icons/sprite.svg#burger"></use>
+            </svg>
+          </button>
+          <a href="/" class="logo header__logo ps-sm-2">
             <img src="./img/logo.svg" alt="Логотип Квестикс." width="137" height="24">
           </a>
           <nav class="menu d-flex align-items-center">
-            <a href="#" class="menu__link d-flex flex-column align-items-center">
-              <svg class="icon phone-icon">
+            <a href="#" class="menu__link d-flex flex-column align-items-center d-none d-sm-flex">
+              <svg class="menu-icon phone-icon">
                 <use id="phoneIcon" xlink:href="./img/icons/sprite.svg#phone"></use>
               </svg>
-              Контакты
+              <span>Контакты</span>
             </a>
-            <a href="#" class="menu__link d-flex flex-column align-items-center">
-              <svg class="icon book-icon">
+            <a href="#" class="menu__link d-flex flex-column align-items-center d-none d-sm-flex">
+              <svg class="menu-icon book-icon">
                 <use id="bookIcon" xlink:href="./img/icons/sprite.svg#book"></use>
               </svg>
-              Блог
+              <span>Блог</span>
             </a>
             <a href="#" class="menu__link d-flex flex-column align-items-center">
-              <svg class="icon profile-icon">
+              <svg class="menu-icon profile-icon">
                 <use id="profileIcon" xlink:href="./img/icons/sprite.svg#profile"></use>
               </svg>
-              Заказы
+              <span class="d-none d-sm-block">Заказы</span>
             </a>
           </nav>
         </div>
       </div>
     </header>
-    <main class="main flex-grow-1">
-      <ol class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a href="/" class="breadcrumbs__text">Главная</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <span class="breadcrumbs__text">Каталог</span>
-        </li>
-      </ol>
-    </main>
-    <footer class="footer">
+    <main class="main flex-grow-1 pt-0 pt-sm-4">
 
-    </footer>
+      <div class="container custom-container">
+        <ol class="breadcrumbs d-flex d-none d-sm-flex align-items-center m-0 p-0">
+          <li class="breadcrumbs__item">
+            <a href="/" class="breadcrumbs__text">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__text">Каталог</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="page-content">
+        <div class="container custom-container">
+
+          <div class="page-content__row row">
+
+            <div class="page-content__info col-xs-12 col-lg-8 col-xl-9 flex-grow-1">
+
+              <section class="banner-section">
+                <div class="quest-banner">
+                  <div class="quest-banner__tip">самый популярный</div>
+                  <h1 class="quest-banner__title">Стрелы Амура, 18+</h1>
+                  <div class="quest-banner__bottom">
+
+                    <ul class="quest-banner__tags d-flex align-items-sm-center flex-wrap">
+                      <li class="tag">
+                        <a href="#" class="tag__link">квест</a>
+                      </li>
+                      <li class="tag">
+                        <a href="#" class="tag__link">для 2 человек</a>
+                      </li>
+                      <li class="tag">
+                        <a href="#" class="tag__link">для дома</a>
+                      </li>
+                      <li class="tag">
+                        <a href="#" class="tag__link">сложность 7/10</a>
+                      </li>
+                    </ul>
+
+                    <p class="quest-banner__description m-0">
+                      Романтический квест по поиску подарка для второй половинки: мужа, жены, парня или девушки.
+                      Чтобы собрать 7 стрел бога любви Амура и разыскать подарок, игроку нужно выполнить задания древних
+                      богов.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="reviews">
+                <h2 class="reviews__title">
+                  Отзывы клиентов
+                  <sup class="reviews__title-count">182</sup>
+                </h2>
+
+                <div class="swiper review-slider">
+                  <div class="swiper-wrapper">
+
+                    <article class="swiper-slide review-slide">
+                      <div class="review-slide__container d-flex flex-column">
+                        <div class="review-slide__top flex-grow-1">
+                          <time datetime="2024-14-02" class="review-slide__date d-block">14 февраля 2024</time>
+                          <div class="review-slide__head">
+                            <span class="review-slide__name d-block">Константин (12 игроков 36-50 лет)</span>
+
+                            <div class="rating d-flex align-items-center gap-2" aria-label="Рейтинг 5 из 5.">
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="review-slide__description">
+                          <h3 class="review-slide__title">День святого Валентина</h3>
+                          <p class="review-slide__text m-0">
+                            Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                            страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                            ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+
+                    <article class="swiper-slide review-slide">
+                      <div class="review-slide__container d-flex flex-column">
+                        <div class="review-slide__top flex-grow-1">
+                          <time datetime="2024-14-02" class="review-slide__date d-block">14 февраля 2024</time>
+                          <div class="review-slide__head">
+                            <span class="review-slide__name d-block">Светлана (2 игрока 36 лет) </span>
+
+                            <div class="rating d-flex align-items-center gap-2" aria-label="Рейтинг 4 из 5.">
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="review-slide__description">
+                          <h3 class="review-slide__title">День Рождения</h3>
+                          <p class="review-slide__text m-0">
+                            Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                            страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                            ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+
+                    <article class="swiper-slide review-slide">
+                      <div class="review-slide__container d-flex flex-column">
+                        <div class="review-slide__top flex-grow-1">
+                          <time datetime="2024-14-02" class="review-slide__date d-block">14 февраля 2024</time>
+                          <div class="review-slide__head">
+                            <span class="review-slide__name d-block">Светлана (2 игрока 36 лет) </span>
+
+                            <div class="rating d-flex align-items-center gap-2" aria-label="Рейтинг 5 из 5.">
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="review-slide__description">
+                          <h3 class="review-slide__title">День Рождения</h3>
+                          <p class="review-slide__text m-0">
+                            Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                            страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                            ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+
+                    <article class="swiper-slide review-slide">
+                      <div class="review-slide__container d-flex flex-column">
+                        <div class="review-slide__top flex-grow-1">
+                          <time datetime="2024-14-02" class="review-slide__date d-block">14 февраля 2024</time>
+                          <div class="review-slide__head">
+                            <span class="review-slide__name d-block">Константин (12 игроков 36-50 лет)</span>
+
+                            <div class="rating d-flex align-items-center gap-2" aria-label="Рейтинг 5 из 5.">
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="review-slide__description">
+                          <h3 class="review-slide__title">День святого Валентина</h3>
+                          <p class="review-slide__text m-0">
+                            Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                            страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                            ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+
+                    <article class="swiper-slide review-slide">
+                      <div class="review-slide__container d-flex flex-column">
+                        <div class="review-slide__top">
+                          <time datetime="2024-14-02" class="review-slide__date d-block">14 февраля 2024</time>
+                          <div class="review-slide__head">
+                            <span class="review-slide__name d-block">Константин (12 игроков 36-50 лет)</span>
+
+                            <div class="rating d-flex align-items-center gap-2" aria-label="Рейтинг 5 из 5.">
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="star-icon star-icon_active">
+                                <use id="starIcon" xlink:href="./img/icons/sprite.svg#star"></use>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="review-slide__description">
+                          <h3 class="review-slide__title">День святого Валентина</h3>
+                          <p class="review-slide__text m-0">
+                            Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                            страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                            ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                          </p>
+                        </div>
+                      </div>
+
+                    </article>
+                  </div>
+                  <div class="swiper-pagination d-block d-md-none"></div>
+                  <div class="swiper-scrollbar d-none d-md-block"></div>
+                </div>
+
+                <a href="#"
+                  class="custom-btn d-flex align-items-center justify-content-center reviews__custom-btn">
+                  <span class="btn__text">Смотреть все отзывы</span>
+                </a>
+              </section>
+
+            </div>
+
+            <sidebar class="page-content__details col-xs-12 col-lg-4 col-xl-3">
+
+              <div class="payment-card d-flex flex-column align-items-center gap-4">
+                <div class="payment-card__top">
+                  <span class="payment-card__basic-text mb-2 d-block text-center">Принимаем к оплате</span>
+                  <div class="payment-card__logos d-flex flex-md-nowrap align-items-center">
+                    <span class="payment-card__logo payment-card__logo_sber" aria-label="Сбер."></span>
+                    <span class="payment-card__logo payment-card__logo_mcard" aria-label="Mastercard."></span>
+                    <span class="payment-card__logo payment-card__logo_visa" aria-label="Visa."></span>
+                    <span class="payment-card__logo payment-card__logo_mir" aria-label="Мир."></span>
+                  </div>
+                </div>
+
+                <div class="payment-card__title text-center d-flex flex-column align-items-center">Я из другой страны —
+                  <a href="#">как оплатить?</a>
+                </div>
+
+                <a href="#"
+                  class="custom-btn d-flex align-items-center w-100 justify-content-between payment-card__custom-btn">
+                  <span class="btn__text">Купить квест</span>
+                  <span class="btn__text">500 ₽</span>
+                </a>
+              </div>
+            </sidebar>
+
+          </div>
+        </div>
+
+      </div>
+
+    </main>
   </div>
-  
+
   <script src="js/libs/swiper-bundle.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

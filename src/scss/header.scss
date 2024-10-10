@@ -1,10 +1,6 @@
 .header {
   background-color: #fff;
   padding: 8.5px 0;
-
-  &__logo {
-    padding-left: 8px;
-  }
 }
 
 .menu {
@@ -22,4 +18,21 @@
 
 .logo {
   display: block;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.mob-menu {
+  outline: none;
+  background: transparent;
+  border: none;
+  padding: 0; 
+
+  svg {
+    width: 18px;
+    height: 12px;
+  }
 }
